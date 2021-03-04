@@ -1,0 +1,29 @@
+Det som gör via de här kommandona (det vi gjort hittils under lektionen) är enbart samma sak so matt vi skulle klicka på att skapa en ny mapp själva I filhanteraren.
+
+cd XX = går till katalogen XX alt till angiven sökväg
+cd  \   = går till roten av enheten man står i
+cd ..   = hoppar upp en nivå i katalogträdet, dvs till mappen ovan aktuell mapp
+dir XX = listar innehållet i katalogen XX
+dir = listar innehållet i aktuell mapp
+mkdir XX  = skapar upp katalogen XX i den aktuella katalogen (som man står i)
+cls = rensar/tömmer innehållet i terminalen
+
+
+
+Det som görs via de här kommandona är de som gör förändringar i antingen er branch eller ert project, tex skicka upp / hämta kod på github.
+
+git init  = skapar ett nytt git repository (repo) i aktuell mapp
+git clone XX  = klonar repot XX ner till katalogen du står i
+git branch mybranch    = Skapa ny branch med namnet “mybranch”.
+git checkout mybranch  = gör “mybranch” till aktiv branch
+git checkout -b mybranch     = Både skapa ny branch och gör den aktiv
+git pull  = drar ner de senaste commits
+git branch  = listar lokala branches
+git status = listar nya och förändrade filer i aktuell branch
+git add Bankuppgift.sln           = lägger till förändringarna av filen till staging area/indexet, dvs till aktuell korg som man sen skapar commit på. Använd detta alternativ i första hand.
+git add .  = lägger till ALLA förändringar i staging area. SKA UNDVIKAS! För att skräddarsy commits, dvs jag vill inte få in ALLA förändringar (dvs för BÅDE klass och meny) i samma commit. Utan en commit för klass SAMT en för meny.
+git commit -m “XX”   = Skapar en commit (snapshot) baserat på det som ligger i staged snapshot (staging area).
+git log  = listar alla commits
+git push  = pushar upp alla nya commits, från den aktiva branchern, till origin (origin = sökvägen till repot på github)
+git push - -all = pushar upp alla nya commits i alla branches till origin.
+
